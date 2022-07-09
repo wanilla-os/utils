@@ -207,7 +207,7 @@ def all():
 def main(args):
     if len(args) == 1:
         while True:
-            main(prompt('wup > '))
+            main(['wup', prompt('wup > ')])
     elif args[1] == "all":
         print("\n".join(all()))
     elif args[1] == "add":
